@@ -10,3 +10,6 @@ jobs:
           node-version: '14'
       - run: pwd
       - run: ls
+      - run: npm install
+      - run: npm run build
+      - run: ls dist
