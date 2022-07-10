@@ -12,4 +12,8 @@ jobs:
       - run: ls
       - run: npm install
       - run: npm run build
-      - run: ls dist
+      - uses: JamesIves/github-pages-deploy-action@v4.3.4
+        with:
+          branch: master
+          forder: ./dist
+          
